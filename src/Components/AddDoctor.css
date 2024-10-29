@@ -1,0 +1,130 @@
+/* Main Container */
+.add-doctor-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.doctor-list-container h2, .doctor-form-container h2 {
+    text-align: center;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Search Input */
+.search-input {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Table */
+.doctor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.doctor-table th, .doctor-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.doctor-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.doctor-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.doctor-table tbody tr:hover {
+    background-color: #e0e7ff;
+}
+
+/* Buttons */
+.edit-button, .delete-button, .toggle-form-button, .submit-button {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #4caf50;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.toggle-form-button {
+    background-color: #007bff;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.edit-button:hover {
+    background-color: #45a049;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.toggle-form-button:hover, .submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Container */
+.doctor-form-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.doctor-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.doctor-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.doctor-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}

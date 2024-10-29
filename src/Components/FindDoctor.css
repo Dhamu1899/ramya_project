@@ -1,0 +1,140 @@
+/* Container */
+.find-doctor-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.find-doctor-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.find-doctor-container h3 {
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Patient Table */
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.patient-table th,
+.patient-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.patient-table th {
+  background-color: #eaeaea;
+  font-weight: bold;
+}
+
+/* Action Buttons */
+.action-button,
+.delete-button,
+.submit-button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-button {
+  background-color: #007bff;
+}
+
+.delete-button {
+  background-color: #d9534f;
+}
+
+.submit-button {
+  background-color: #28a745;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Form */
+.appointment-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.appointment-form select,
+.appointment-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Appointment Details */
+.appointment-details-section {
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Set a width for the modal */
+}
+
+/* Cancel Button */
+.cancel-button {
+  background-color: #d9534f; /* Red background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 8px 12px; /* Padding for the button */
+  cursor: pointer; /* Change cursor on hover */
+  margin-left: 10px; /* Space between buttons */
+}
+
+.cancel-button:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}

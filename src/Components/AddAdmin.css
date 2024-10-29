@@ -1,0 +1,109 @@
+/* Container */
+.admin-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.admin-title, .admin-list-title {
+  text-align: center;
+  color: #007bff;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+.admin-list-title {
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Form */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.admin-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs */
+.admin-form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.admin-form input:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+/* Button */
+.admin-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-button:hover {
+  background-color: #0056b3;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* No Admin Message */
+.no-admin-message {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Admin Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #e0e7ff;
+  cursor: pointer;
+}
