@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AdminLogin.css';
 
 const AdminLogin = () => {
   const [credentials, setCredentials] = useState({ uniqueId: '', password: '' });
+  const [adminList, setAdminList] = useState([]);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const savedAdmins = JSON.parse(localStorage.getItem('admins')) || [];
+    setAdminList(savedAdmins);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -13,11 +19,21 @@ const AdminLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (credentials.uniqueId && credentials.password) {
+
+    const defaultId = '123456';
+    const defaultPassword = 'Ramya';
+
+    // Check if the credentials match the default or any registered admin
+    const isDefaultAdmin = credentials.uniqueId === defaultId && credentials.password === defaultPassword;
+    const isRegisteredAdmin = adminList.some(
+      (admin) => admin.id === credentials.uniqueId && admin.password === credentials.password
+    );
+
+    if (isDefaultAdmin || isRegisteredAdmin) {
       alert("Login successful!");
       navigate("/Pages/AdminLandingScreen");
     } else {
-      alert("Please provide valid credentials.");
+      alert("Invalid credentials. Please try again.");
     }
   };
 
